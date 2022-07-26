@@ -1,0 +1,158 @@
+/* line 7, ../FE87-atix/scss/const.scss */
+body {
+  color: black;
+  font-family: 'Raleway';
+  font-style: normal;
+}
+
+/* line 12, ../FE87-atix/scss/const.scss */
+h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 117%;
+}
+
+/* line 17, ../FE87-atix/scss/const.scss */
+h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 117%;
+}
+
+/* line 22, ../FE87-atix/scss/const.scss */
+h3 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 138%;
+}
+
+/* line 28, ../FE87-atix/scss/const.scss */
+h4 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+/* line 35, ../FE87-atix/scss/const.scss */
+h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 117%;
+}
+
+/* line 40, ../FE87-atix/scss/const.scss */
+h6 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 139%;
+}
+
+/* line 48, ../FE87-atix/scss/const.scss */
+.ui-navigation {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  align-items: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+/* line 57, ../FE87-atix/scss/const.scss */
+.ui-navigation:hover {
+  background: #EC7979;
+}
+
+/* line 60, ../FE87-atix/scss/const.scss */
+.ui-navigation:active {
+  background: #AB4949;
+}
+
+/* line 1, ../FE87-atix/scss/flex.scss */
+body, .fotter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 7, ../FE87-atix/scss/flex.scss */
+.fotter__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 13, ../FE87-atix/scss/flex.scss */
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 6, ../FE87-atix/scss/desktop.scss */
+body {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/* line 11, ../FE87-atix/scss/desktop.scss */
+main {
+  flex-grow: 1;
+}
+
+/* line 14, ../FE87-atix/scss/desktop.scss */
+header {
+  background-color: black;
+  height: 75px;
+  width: 100vw;
+}
+
+/* line 20, ../FE87-atix/scss/desktop.scss */
+fotter {
+  background-color: black;
+  padding-bottom: 27px;
+  padding-top: 27px;
+  width: 100vw;
+}
+
+/* line 26, ../FE87-atix/scss/desktop.scss */
+._container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* line 34, ../FE87-atix/scss/desktop.scss */
+.header__item {
+  padding: 30px 0;
+}
+
+/* line 61, ../FE87-atix/scss/desktop.scss */
+.fotter__link {
+  height: 53px;
+  width: 53px;
+  padding: 5px;
+  margin-right: 33px;
+}
+
+/* line 66, ../FE87-atix/scss/desktop.scss */
+.fotter__link img {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 70, ../FE87-atix/scss/desktop.scss */
+.fotter__link:nth-last-child(n) {
+  margin-right: 0;
+}
+
+/* line 75, ../FE87-atix/scss/desktop.scss */
+.fotter__sign {
+  color: #86878b;
+}
+
+/*# sourceMappingURL=desktop.css.map */
