@@ -79,36 +79,95 @@ fotter{
 .pricing {
     background:rgba(245, 245, 245, 1);
 }
-.pricing-content {
-    text-align: center;
-    h2{
-        text-transform: uppercase; 
-        padding: 68px 0;
-        position: relative;
-        &::after{
-            position: absolute;
-            bottom: 0;
-            left: calc(50% - 170px/2);
-            content: '';
-            width: 170px;
-            height: 1px;
-            background-color: $pink;
-        }
-    }
-    h5{
-        padding: 40px 0;
-    }
+// .pricing-content, .text-content{
+//     text-align: center;
+//     h2{
+//         text-transform: uppercase; 
+//         padding: 68px 0;
+//         position: relative;
+//         &::after{
+//             position: absolute;
+//             bottom: 0;
+//             left: calc(50% - 170px/2);
+//             content: '';
+//             width: 170px;
+//             height: 1px;
+//             background-color: $pink;
+//         }
+//     }
+//     h5{
+//         padding: 40px 0;
+//     }
 
 
-}
+// }
 .pricing-plan {
     @extend %flex-rc;
 }
 .pricing-plan__item {
 }
 
+.feedback {
+}
 
+.feedback-content {
+}
+.text-content {
+}
+.coment-list {
+    @extend %flex-rc;
+    margin-bottom: 64px;
+    margin-top: 83px;
+}
+.coment {
+    flex: 0 1 33%;
+    margin-right: 30px;
+    &:nth-last-child(1){
+        margin-right: 0;
+    }
+}
+.coment__text {
+    padding: 38px 17px;
+    background: #E2E2E2;
+    color: $gray;
+    border-radius: 10px;
+    position: relative;
+    &::after{
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 20px solid #E2E2E2;
+        position: absolute;
+        bottom: -20px;
+        left: 100px;
+    }
+}
 
+.user-card{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 66px;
+    text-align: left;
+}
+.coment__user-photo{
+    flex: 0 0 30%;
+}
+.coment__user-name {
+    flex: 0 0 70%;
+    padding: 23px 0;
+}
+.comment__user-post {
+    flex: 0 0 100%;
+    padding-left: 111px;
+}
+.download-last{
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/download-last-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 
 .fotter {
     @extend %flex-cc;
@@ -116,5 +175,6 @@ fotter{
 
 
 .copyright {
+    margin-top: 28px;
     color: $gray;
 }

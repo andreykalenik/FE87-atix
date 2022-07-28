@@ -66,7 +66,7 @@ h6 {
   align-items: center;
 }
 
-.pricing-plan, .social-media-content, .sm-link {
+.coment-list, .pricing-plan, .social-media-content, .sm-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,10 +140,42 @@ h6 {
   align-items: center;
 }
 
-.pricing-plan, .social-media-content, .sm-link {
+.coment-list, .pricing-plan, .social-media-content, .sm-link {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.text-content {
+  text-align: center;
+}
+.text-content h2 {
+  text-transform: uppercase;
+  padding: 70px 0;
+  position: relative;
+}
+.text-content h2::after {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 85px);
+  content: "";
+  width: 170px;
+  height: 1px;
+  background-color: rgb(236, 121, 121);
+}
+.text-content h5 {
+  padding-top: 40px;
+  padding-bottom: 23px;
+}
+
+.text-content-white {
+  color: #FFFFFF;
+}
+.text-content-white h2 {
+  color: #FFFFFF;
+}
+.text-content-white h2::after {
+  background-color: #FFFFFF;
 }
 
 .sm-link .link-icon {
@@ -156,7 +188,7 @@ h6 {
   height: 100%;
   width: 100%;
 }
-.sm-link .link-icon:nth-last-child(n) {
+.sm-link .link-icon:nth-last-child(1) {
   margin-right: 0;
 }
 
@@ -168,11 +200,11 @@ h6 {
 }
 
 .card {
-  margin: 79px 30px 64px;
+  margin: 70px 30px 59px;
 }
 
 .card-center {
-  margin: 64px 30px 79px;
+  margin: 59px 30px 70px;
   filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
 }
 
@@ -184,6 +216,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #FFFFFF;
 }
 
 .card__item-black {
@@ -200,6 +233,24 @@ h6 {
 .card__price {
   height: 100px;
   width: 100%;
+}
+
+.button_1 {
+  width: 270px;
+  height: 60px;
+  margin: 50px 0;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+}
+.button_1:hover {
+  color: rgb(236, 121, 121);
+  border-color: rgb(236, 121, 121);
+}
+.button_1:active {
+  color: #FFFFFF;
+  border-color: rgb(171, 73, 73);
+  background-color: rgb(171, 73, 73);
 }
 
 body {
@@ -272,27 +323,66 @@ fotter {
   background: rgb(245, 245, 245);
 }
 
-.pricing-content {
-  text-align: center;
+.coment-list {
+  margin-bottom: 64px;
+  margin-top: 83px;
 }
-.pricing-content h2 {
-  text-transform: uppercase;
-  padding: 68px 0;
+
+.coment {
+  flex: 0 1 33%;
+  margin-right: 30px;
+}
+.coment:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.coment__text {
+  padding: 38px 17px;
+  background: #E2E2E2;
+  color: rgb(134, 135, 139);
+  border-radius: 10px;
   position: relative;
 }
-.pricing-content h2::after {
-  position: absolute;
-  bottom: 0;
-  left: calc(50% - 85px);
+.coment__text::after {
   content: "";
-  width: 170px;
-  height: 1px;
-  background-color: rgb(236, 121, 121);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid #E2E2E2;
+  position: absolute;
+  bottom: -20px;
+  left: 100px;
 }
-.pricing-content h5 {
-  padding: 40px 0;
+
+.user-card {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 66px;
+  text-align: left;
+}
+
+.coment__user-photo {
+  flex: 0 0 30%;
+}
+
+.coment__user-name {
+  flex: 0 0 70%;
+  padding: 23px 0;
+}
+
+.comment__user-post {
+  flex: 0 0 100%;
+  padding-left: 111px;
+}
+
+.download-last {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/download-last-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .copyright {
+  margin-top: 28px;
   color: rgb(134, 135, 139);
 }/*# sourceMappingURL=main.css.map */
