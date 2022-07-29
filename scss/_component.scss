@@ -1,6 +1,64 @@
 @import "_const.scss";
 @import "_flex.scss";
 
+body{
+    color: $black;
+    font-family: 'Raleway';
+    font-style: normal;
+ }
+ h1{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 117%;
+ }
+ h2{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 117%;
+ }
+ h3{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 138%;
+ }
+ h4{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+ }
+ h5, p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 117%;
+ }
+ h6{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 139%;
+ }
+ 
+ .ui-navigation{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    align-items: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    &:hover{
+       background:#EC7979;
+    }
+    &:active{
+      background: #AB4949; 
+    }
+ }
+ 
+ 
+
 .text-content{
     text-align: center;
     h2{

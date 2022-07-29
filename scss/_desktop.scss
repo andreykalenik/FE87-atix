@@ -101,6 +101,33 @@ fotter{
 
 
 // }
+.about {
+}
+
+.about-content {
+}
+
+.abouu-card-list {
+    @extend %flex-rc;
+    align-items: center;
+}
+.about-card {
+}
+.about-card__img {
+    height: 92px;
+    width: 92px;
+    border-radius: 50%;
+    border: 1px solid pink;
+    img{
+        height: 70%;
+        width: 70%;
+        margin: 15%;
+     }
+}
+.about-card__title {
+}
+.about-card__text {
+}
 .pricing-plan {
     @extend %flex-rc;
 }
