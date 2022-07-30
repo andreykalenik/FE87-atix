@@ -76,6 +76,19 @@ fotter{
     }
 }
 
+
+.tab-content {
+    margin: 20px auto;
+    
+}
+.tab-bar {
+    @extend %flex-r;
+}
+.tab-aera {
+    width: 1170px;
+    height: 501px;
+    border: 1px solid #C6CBCD;
+}
 .pricing {
     background:rgba(245, 245, 245, 1);
 }
@@ -109,15 +122,19 @@ fotter{
 
 .abouu-card-list {
     @extend %flex-rc;
-    align-items: center;
+    gap: 30px;
+    margin-top: 110px;
+    margin-bottom: 58px;
 }
 .about-card {
+
 }
 .about-card__img {
     height: 92px;
     width: 92px;
     border-radius: 50%;
     border: 1px solid pink;
+    margin: 0 auto;
     img{
         height: 70%;
         width: 70%;
@@ -125,8 +142,10 @@ fotter{
      }
 }
 .about-card__title {
+    margin-top: 78px;
 }
 .about-card__text {
+    margin-top: 46px;
 }
 .pricing-plan {
     @extend %flex-rc;

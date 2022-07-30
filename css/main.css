@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.tab-bar {
+  display: flex;
+}
+
 .fotter, body, .card {
   display: flex;
   flex-direction: column;
@@ -20,6 +24,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tab-bar {
+  display: flex;
 }
 
 body {
@@ -191,6 +199,39 @@ h6 {
   background-color: rgb(171, 73, 73);
 }
 
+.tab-name {
+  min-width: 184px;
+  min-height: 40px;
+  padding: 9px;
+  color: rgb(51, 51, 51);
+  border: 1px solid #C6CBCD;
+  border-radius: 5px 5px 0px 0px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+.tab-name::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.tab-name-pasive {
+  border: none;
+}
+.tab-name-pasive::after {
+  content: none;
+}
+
 body {
   height: 100vh;
   margin: 0 auto;
@@ -257,12 +298,24 @@ fotter {
   color: #86878B;
 }
 
+.tab-content {
+  margin: 20px auto;
+}
+
+.tab-aera {
+  width: 1170px;
+  height: 501px;
+  border: 1px solid #C6CBCD;
+}
+
 .pricing {
   background: rgb(245, 245, 245);
 }
 
 .abouu-card-list {
-  align-items: center;
+  gap: 30px;
+  margin-top: 110px;
+  margin-bottom: 58px;
 }
 
 .about-card__img {
@@ -270,11 +323,20 @@ fotter {
   width: 92px;
   border-radius: 50%;
   border: 1px solid pink;
+  margin: 0 auto;
 }
 .about-card__img img {
   height: 70%;
   width: 70%;
   margin: 15%;
+}
+
+.about-card__title {
+  margin-top: 78px;
+}
+
+.about-card__text {
+  margin-top: 46px;
 }
 
 .coment-list {
