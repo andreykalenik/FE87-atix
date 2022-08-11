@@ -95,12 +95,12 @@ h6 {
 .text-content {
   text-align: center;
 }
-.text-content h2 {
+.text-content h1, .text-content h2 {
   text-transform: uppercase;
   padding: 70px 0;
   position: relative;
 }
-.text-content h2::after {
+.text-content h1::after, .text-content h2::after {
   position: absolute;
   bottom: 0;
   left: calc(50% - 85px);
@@ -114,13 +114,26 @@ h6 {
   padding-bottom: 23px;
 }
 
+.text-content-toleft {
+  text-align: left;
+}
+.text-content-toleft h1::after, .text-content-toleft h2::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 170px;
+  height: 1px;
+  background-color: rgb(236, 121, 121);
+}
+
 .text-content-white {
   color: #FFFFFF;
 }
-.text-content-white h2 {
+.text-content-white h1, .text-content-white h2 {
   color: #FFFFFF;
 }
-.text-content-white h2::after {
+.text-content-white h1::after, .text-content-white h2::after {
   background-color: #FFFFFF;
 }
 
@@ -162,11 +175,11 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: rgb(255, 255, 255);
 }
 
 .card__item-black {
-  color: #FFFFFF;
+  color: rgb(255, 255, 255);
   background: #333333;
   border: 1px solid #F5F5F5;
 }
@@ -185,16 +198,17 @@ h6 {
   width: 270px;
   height: 60px;
   margin: 50px 0;
-  color: #FFFFFF;
+  color: rgb(255, 255, 255);
   background-color: transparent;
-  border: 2px solid #FFFFFF;
+  border: 2px solid rgb(255, 255, 255);
+  text-transform: capitalize;
 }
 .button_1:hover {
   color: rgb(236, 121, 121);
   border-color: rgb(236, 121, 121);
 }
 .button_1:active {
-  color: #FFFFFF;
+  color: rgb(255, 255, 255);
   border-color: rgb(171, 73, 73);
   background-color: rgb(171, 73, 73);
 }
@@ -218,6 +232,27 @@ h6 {
   background-color: rgb(171, 73, 73);
 }
 .button_2:active {
+  background-color: rgb(236, 121, 121);
+}
+
+.button_3 {
+  width: 270;
+  height: 65px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(236, 121, 121);
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+.button_3:hover {
+  background-color: rgb(171, 73, 73);
+}
+.button_3:active {
   background-color: rgb(236, 121, 121);
 }
 
@@ -307,6 +342,7 @@ fotter {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/welcome-screen-BG.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .welcome-screen-content {
@@ -315,6 +351,12 @@ fotter {
 
 .welcome-screen-txt {
   flex-basis: 60%;
+  margin-top: 207px;
+  margin-bottom: 183px;
+}
+.welcome-screen-txt img {
+  height: 100px;
+  width: 270px;
 }
 
 .welcome-screen-form {
@@ -334,6 +376,7 @@ fotter {
   width: calc(100% - 100px);
   margin: 0 50px 45px 50px;
   padding: 30px 0;
+  text-align: center;
 }
 .welcome-screen-form p {
   height: 38px;

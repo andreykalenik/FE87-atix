@@ -61,7 +61,7 @@ body{
 
 .text-content{
     text-align: center;
-    h2{
+    h1, h2{
         text-transform: uppercase; 
         padding: 70px 0;
         position: relative;
@@ -80,15 +80,30 @@ body{
         padding-bottom: 23px;
     }
 }
+.text-content-toleft{
+    text-align: left;
+    h1, h2{
+        &::after{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            width: 170px;
+            height: 1px;
+            background-color: $pink;
+        }
+    }
+}
 .text-content-white{
     color:#FFFFFF;
-    h2{
+    h1, h2{
         color: #FFFFFF;
         &::after{
             background-color: #FFFFFF;
         }
     }
 }
+
 .sm-link{
     @extend %flex-rc;
     .link-icon{
@@ -131,10 +146,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: $white;
 }
 .card__item-black {
-    color: #FFFFFF;
+    color: $white;
     background: #333333;
     border: 1px solid #F5F5F5;
 }
@@ -151,15 +166,16 @@ body{
     width: 270px;
     height: 60px;
     margin: 50px 0;
-    color: #FFFFFF;
+    color: $white;
     background-color: transparent;
-    border: 2px solid #FFFFFF;
+    border: 2px solid $white;
+    text-transform: capitalize;
     &:hover{
         color: $pink;
         border-color: $pink;
     }
     &:active{
-        color: #FFFFFF;
+        color: $white;
         border-color: $red;
         background-color: $red;
     }
@@ -179,6 +195,27 @@ body{
     line-height: 20px;
     align-items: center;
     text-align: center;
+    &:hover{
+        background-color: $red;
+    }
+    &:active{
+        background-color: $pink;
+    }
+
+}
+.button_3{
+    width: 270;
+    height: 65px;
+    color: $white;
+    background-color: $pink;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
     &:hover{
         background-color: $red;
     }

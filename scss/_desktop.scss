@@ -61,6 +61,7 @@ fotter{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/welcome-screen-BG.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
    
 }
 
@@ -72,6 +73,12 @@ fotter{
 }
 .welcome-screen-txt {
     flex-basis: 60%;
+    margin-top: 207px;
+    margin-bottom: 183px;
+    img{
+        height: 100px;
+        width: 270px;
+    }
 }
 .welcome-screen-form {
     flex-basis: 40%;
@@ -89,6 +96,7 @@ fotter{
         width: calc(100% - 100px);
         margin: 0 50px 45px 50px;
         padding: 30px 0;
+        text-align: center;
     
     }
     p{
